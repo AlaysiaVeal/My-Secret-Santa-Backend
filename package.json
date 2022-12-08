@@ -1,0 +1,27 @@
+{
+  "name": "my-secret-santa-backend",
+  "version": "1.0.0",
+  "description": "Date: 12/8/22",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlaysiaVeal/My-Secret-Santa-Backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlaysiaVeal/My-Secret-Santa-Backend/issues"
+  },
+  "homepage": "https://github.com/AlaysiaVeal/My-Secret-Santa-Backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "pg": "^8.8.0",
+    "sequelize": "^6.26.0"
+  }
+}
