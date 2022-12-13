@@ -24,7 +24,6 @@ const getListId = async (req, res) => {
 const createLists = async (req, res) => {
   try {
     let body = {
-      userId,
       ...req.body
     }
     const lists = await List.create(body)
@@ -40,7 +39,7 @@ const deleteLists = async (req, res) => {
     await List.destroy({
       where: { id: listId }
     })
-    res.send({ message: `deleted user with id of ${userId}` })
+    res.send({ message: `deleted user with id of ${listId}` })
   } catch (error) {
     throw error
   }
@@ -49,7 +48,7 @@ const deleteLists = async (req, res) => {
 const updatedList = async (req, res) => {
   try {
     let listId = parseInt(req.params.list_id)
-    const updatedList = await User.update(req.body, {
+    const updatedList = await List.update(req.body, {
       where: { id: listId },
       returning: true
     })

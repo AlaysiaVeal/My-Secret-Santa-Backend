@@ -24,8 +24,6 @@ const getUserListId = async (req, res) => {
 const createUsersList = async (req, res) => {
   try {
     let body = {
-      userId,
-      listId,
       ...req.body
     }
     const users = await User_list.create(body)

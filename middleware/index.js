@@ -1,12 +1,12 @@
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
-const { has } = require('lodash')
 require('dotenv').config()
 
 const SALT_ROUNDS = parseInt(process.env.SALT_ROUNDS)
 const APP_KEY = process.env.APP_KEY
 
 const hashPassword = async (password) => {
+  console.log(SALT_ROUNDS)
   let hashedPassword = await bcrypt.hash(password, SALT_ROUNDS)
   return hashedPassword
 }

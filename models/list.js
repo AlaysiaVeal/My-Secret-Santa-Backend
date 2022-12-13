@@ -8,10 +8,10 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      List.hasOne(models.User, {
+      /* List.hasOne(models.User, {
         through: models.User_list,
         foreignKey: 'listId'
-      })
+      }) */
     }
   }
   List.init(
