@@ -11,19 +11,19 @@ module.exports = {
       [
         {
           userId: 1,
-          listId: 1,
+          listId: 4,
           createdAt: new Date(),
           updatedAt: new Date()
         },
         {
           userId: 2,
-          listId: 2,
+          listId: 5,
           createdAt: new Date(),
           updatedAt: new Date()
         },
         {
           userId: 3,
-          listId: 3,
+          listId: 6,
           createdAt: new Date(),
           updatedAt: new Date()
         }
